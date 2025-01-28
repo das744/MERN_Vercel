@@ -1,0 +1,114 @@
+
+/* Hero Section */
+.heroSection {
+    position: relative;
+    width: 100%;
+    background-image: url('https://images.unsplash.com/photo-1496307653780-42ee777d4833?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  .heroContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  
+  .heroContainerSocial {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-top: 3rem;
+  }
+  
+  .heroContainerSocial a {
+    color: var(--primary);
+    margin-top: 2rem;
+  }
+  
+  .heroContent {
+    animation: slideUp 1s ease-in-out forwards;
+    opacity: 0;
+  }
+  
+  .heroTitle {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: var(--primary);
+  }
+  
+  .heroSubtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: var(--primary);
+  }
+  
+  /* Small Boxes */
+  .smallBox {
+    background-color: rgba(218, 215, 215, 0.6);
+    margin-top: 10rem;
+    color: var(--primary);
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .smallBox i {
+    font-size: 2rem;
+    color: #afaeae;
+    box-shadow: var(--box-shadow-2);
+    margin-bottom: 10px;
+    border-radius: 50%;
+  }
+  
+  .smallBox h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: var(--tertiary);
+  }
+  
+  .smallBox p {
+    font-size: 0.9rem;
+    color: var(--primary);
+  }
+  
+  /* Animation */
+  @keyframes slideUp {
+    from {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .heroTitle {
+      font-size: 2rem;
+    }
+  
+    .heroSubtitle {
+      font-size: 1rem;
+    }
+  
+    .featureGrid {
+      grid-template-columns: 1fr;
+      bottom: -30px;
+    }
+  
+    .bigBox {
+      grid-column: span 1;
+    }
+  }
+  
